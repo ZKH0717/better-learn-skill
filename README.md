@@ -131,6 +131,29 @@ git clone https://github.com/ZKH0717/better-learn-skill.git better_learn
 
 ---
 
+## 🤖 在 Codex 中使用
+
+这个 skill 用的是开放标准的 `SKILL.md` 格式，Codex 同样能加载。有两个差异需要注意：
+
+| | Claude Code | Codex |
+|---|---|---|
+| 安装路径 | `~/.claude/skills/` | `~/.codex/skills/` |
+| 调用方式 | `/better_learn` | `$better_learn`（`$` 提及） |
+
+Codex 安装：
+
+```bash
+mkdir -p ~/.codex/skills
+cd ~/.codex/skills
+git clone https://github.com/ZKH0717/better-learn-skill.git better_learn
+```
+
+装完在 Codex 里输入 `$better_learn` 即可。
+
+> **如果没生效**：Codex 的 skills 功能一度是 experimental、默认关闭的，需在 `~/.codex/config.toml` 里打开开关（具体键名随版本略有差异）。较新版本可能默认开启。
+
+---
+
 ## 🚀 使用方法
 
 ```bash
